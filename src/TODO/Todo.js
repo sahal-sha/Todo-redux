@@ -28,7 +28,8 @@ const Todo = () =>{
     }
 
     return(
-        <div style={{ textAlign: "center" , paddingTop:"50px"}}>
+        <div className="todo-container">
+        <div style={{ textAlign: "center" , paddingTop:"50px",}}>
             <h1 className="main-head" >TODO LIST</h1>
             <div className="add-task">
                 <input type="text" value={Todo} onChange={(e)=> setTodo(e.target.value)} className="add-input" style={{width:"250px"}}/>
@@ -70,6 +71,7 @@ const Todo = () =>{
                 </div>
             </div>
 
+        </div>
         </div>
     )
     
